@@ -1,0 +1,111 @@
+@import ./colors
+  
+#Footer
+  border-top: solid 1px #33333336
+  padding: 50px 0
+  margin-top: 130px
+
+  #subscribe-container
+    display: flex 
+    align-items: center
+    flex-direction: column
+
+    h2.title 
+      text-transform: uppercase
+      margin-bottom: 20px
+      font-size: 19px
+
+    .input-container
+      position: relative
+      border-radius: 5px
+      margin-bottom: 45px 
+
+      input 
+        padding: 12px 15px
+        border-style: none 
+        border: 1.5px solid #ddd
+        width: 300px
+        border-radius: 4px
+        overflow: hidden
+        margin-right: 120px
+
+      button 
+        cursor: pointer
+        background: $main-color
+        padding: 13.5px 15px  
+        border: none 
+        color: white
+        text-transform: uppercase
+        position: absolute
+        right: 0
+        border-top-right-radius: 4px 
+        border-bottom-right-radius: 4px
+
+    .social-media-container 
+      display: flex
+      justify-content: center 
+      align-items: center
+      margin-bottom: 50px
+      
+      .box 
+        width: 30px 
+        height: 30px
+        margin-right: 10px
+        border-radius: 50%
+        display: flex
+        justify-content: center 
+        align-items: center
+        cursor: pointer
+        transition: background .5s, transform .5s
+
+        &:hover 
+          transform: scale(1.05)
+
+        i 
+          color: white
+
+      .facebook
+        background: #3B4F92
+        &:hover 
+          background: darken(#3B4F92, 10%)
+
+      .twitter 
+        background: #23A6E7
+        &:hover 
+          background: darken(#23A6E7, 10%)
+
+      .youtube 
+        background: #CE201F
+        &:hover 
+          background: darken(#CE201F, 10%)
+        
+
+      .instagram 
+        background: #3E729B
+        &:hover 
+          background: darken(#3E729B, 10%)
+      
+
+  .menu-container 
+    display: flex
+    ul 
+      margin-right: 200px
+
+      li 
+        color: #333333
+        list-style: none
+        font-size: .8rem
+        padding: 6px
+        cursor: pointer
+        transition: color .4s 
+        &:hover 
+          color: $main-color
+
+      li.list-title 
+        color: black
+        font-weight: bolder
+        font-size: 1rem
+        margin-bottom: 2px
+
+        &:hover 
+          color: black

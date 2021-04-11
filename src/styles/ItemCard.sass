@@ -1,0 +1,44 @@
+@import ./colors
+
+.ItemCard
+  overflow: hidden
+  .item
+    border: 1.5px solid #ddd
+    overflow: hidden
+    border-radius: 5px
+    background: white
+    cursor: pointer
+    transition: border .5s
+    box-sizing: content-box
+    &:hover 
+      border: 1.5px solid $main-color
+
+    img 
+      height: 216px
+      width: 100%
+      object-fit: cover 
+      object-position: center
+    
+    .info 
+      padding: 10px
+
+      .itemName
+        display: block
+        line-height: 20px
+        font-size: 14px
+        font-weight: 500
+        margin-bottom: 8px
+
+      .priceBefore 
+        font-size: .85rem
+        color: #999
+        margin-bottom: 8px
+
+      .currentPrice 
+        font-size: 1.5rem
+        font-weight: bolder
+        color: $main-color
+      
+      .taxesIncluded 
+        font-size: .6rem
+        color: #999

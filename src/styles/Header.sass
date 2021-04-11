@@ -1,0 +1,28 @@
+@import '../App'
+@import './colors'
+
+.Header
+  display: flex 
+  justify-content: space-between
+  align-items: center
+  padding: 15px 0
+  img 
+    height: 45px
+    padding-left: 20px
+
+  .search-container 
+    position: relative
+    input 
+      padding: 13px 50px 13px 15px
+      border-style: none 
+      background: #EEEEEE
+      border-radius: 3px
+      width: 500px
+      font-size: 14px
+
+    i 
+      position: absolute 
+      top: 50% 
+      transform: translateY(-50%)
+      right: 30px
+      color: $main-color

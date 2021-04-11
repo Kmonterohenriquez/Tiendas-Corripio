@@ -1,0 +1,78 @@
+@import ./colors
+  
+.Nav
+  background: $main-color
+  color: white
+
+  &-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+  nav
+    .main-menu-option
+      &:hover 
+        background: darken($main-color, 10%)
+    ul 
+      display: flex
+      justify-content: space-between
+      position: relative
+
+      li
+        padding: 14px 20px
+        list-style: none
+        text-transform: uppercase
+        font-size: .9rem
+        cursor: pointer
+        transition: background .5s 
+        margin-right: 20px
+        font-weight: 500
+        color: white
+
+        &:hover .sub-unorder-list 
+          display: flex
+
+        a 
+          text-decoration: none 
+          color: white
+
+
+        .sub-unorder-list 
+          z-index: 2
+          bottom: -301px
+          left: 0
+          height: 300px
+          width: 110%
+          position: absolute
+          display: none 
+          flex-direction: column 
+          justify-content: flex-start
+          align-items: start
+          background: white 
+          border: #333
+          border-bottom: solid 1px #33333336
+          border-left: solid 1px #33333336
+          border-right: solid 1px #33333336
+
+          li 
+            padding: 8px 20px
+            color: black
+            font-weight: bold
+            font-size: 0.8rem
+            width: 200px
+
+            &:hover 
+              background: #33333327
+
+  
+  .cart 
+    display: flex 
+    // align-items: flex-start
+
+    i 
+      margin-right: 5px
+      color: white
+
+    #cart-amount
+      font-size: .75rem
+      color: white
+
