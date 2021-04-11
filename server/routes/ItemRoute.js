@@ -3,7 +3,6 @@ const router = express.Router();
 
 const ItemController = require('../controllers/ItemController.js');
 
-
 // GET all items
 router.get('/', ItemController.getItems);
 
@@ -18,3 +17,5 @@ router.put('/:item_id', ItemController.updateItem);
 
 // DELETE one item
 router.delete('/:item_id', ItemController.deleteItem);
+
+module.exports = router;
