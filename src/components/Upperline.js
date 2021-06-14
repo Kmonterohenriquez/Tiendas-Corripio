@@ -15,7 +15,7 @@ const Upperline = () => {
         <nav>
           <ul>
             <Link to=''>
-              <i class='fas fa-user'></i> Mi cuenta
+              <i className='fas fa-user'></i> Mi cuenta
             </Link>
             <Link to=''>Tiendas</Link>
             <Link to=''>Contacto</Link>

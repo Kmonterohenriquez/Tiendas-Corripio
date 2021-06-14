@@ -1,11 +1,12 @@
 import React from 'react';
+
 import '../styles/Nav.sass';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
     <div className='Nav'>
-      <div className='Nav-container container'>
+      <div className='Nav-container lg-container'>
         <nav>
           <ul>
             <li className='main-menu-option'>

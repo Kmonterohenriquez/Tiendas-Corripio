@@ -11,7 +11,7 @@ const Section = props => {
     <div className={`Section ${grayBorderTop}`}>
       <div className='Section-container container'>
         <h3 className='title'>
-          <i class='fas fa-tag'></i>
+          <i className='fas fa-tag'></i>
           {title}
         </h3>
         <div className='Items-grid'>
