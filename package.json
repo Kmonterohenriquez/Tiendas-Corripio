@@ -23,6 +23,9 @@
     "react-scripts": "^1.1.5",
     "web-vitals": "^1.1.1"
   },
+  "engines": {
+    "node": ">=14.17.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
