@@ -29,5 +29,5 @@ connection.once('open', () => {
 // SETUP ROUTES
 app.use('/items', ItemRoute);
 
-const port = SERVER_PORT || 5000;
+const port = SERVER_PORT || process.env.PORT;
 app.listen(port, () => console.log(`Server running on port ${port}`));

@@ -6,7 +6,7 @@ const TelevisionForm = () => {
   const [name, setName] = useState('');
   const [model, setModel] = useState('');
   const [brandLogo, setBrandLogo] = useState('');
-  const [category, setCategory] = useState('tv');
+  // const [category, setCategory] = useState('tv');
   const [color, setColor] = useState('');
   const [screenType, setScreenType] = useState('');
   const [productWidth, setProductWidth] = useState('');
@@ -218,7 +218,7 @@ const TelevisionForm = () => {
       {failureMsg && (
         <Message type='failure' continueBtnHandler={continueBtnHandler} />
       )}
-      <h1>Add New Television</h1>
+      <h1 className='m-b-2'>Add New Television</h1>
       <form onSubmit={() => addItem()}>
         <div className='input-grid'>
           {textInputs.map(input => (

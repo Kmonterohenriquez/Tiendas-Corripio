@@ -1,15 +1,16 @@
-import './App.sass';
-import routes from './routes';
+import "./App.sass";
+import routes from "./routes";
+import React from "react"
 
 // Components
-import Upperline from './components/Upperline';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Upperline from "./components/Upperline";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Upperline />
       <Header />
       <Nav />
