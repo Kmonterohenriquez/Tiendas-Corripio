@@ -20,7 +20,7 @@ const ItemRoute = require("./routes/ItemRoute");
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(`${__dirname}/../build`));
+// app.use(express.static(`${__dirname}/../build`));
 
 // MongoDB connection
 const uri = ATLAS_URI;
