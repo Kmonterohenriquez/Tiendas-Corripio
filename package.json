@@ -2,7 +2,6 @@
   "name": "corripio-clone",
   "author": "Kevin Montero",
   "version": "0.1.0",
-  "main": "server/index.js",
   "proxy": "http://localhost:4000",
   "private": true,
   "dependencies": {
