@@ -4,7 +4,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const { SERVER_PORT, ATLAS_URI } = process.env;
 const app = express();
+const path = require('path');
 
+const port = process.env.PORT || SERVER_PORT;
 // In Production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
@@ -36,5 +38,4 @@ connection.once("open", () => {
 // SETUP ROUTES
 app.use("/items", ItemRoute);
 
-const port = process.env.PORT || SERVER_PORT;
 app.listen(port, () => console.log(`Server running on port ${port}`));
