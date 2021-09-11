@@ -1,12 +1,19 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("mongoose");
 const { SERVER_PORT, ATLAS_URI } = process.env;
 const app = express();
 
+// In Production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"));
+  app.get("*", (req, res) => {
+    req.sendFile(path.resolve(__dirname, "build", "index.html"));
+  });
+}
 // Import Routes for MongoDB
-const ItemRoute = require('./routes/ItemRoute');
+const ItemRoute = require("./routes/ItemRoute");
 
 // Middleware
 app.use(cors());
@@ -22,12 +29,12 @@ mongoose.connect(uri, {
 });
 
 const connection = mongoose.connection;
-connection.once('open', () => {
-  console.log('MongoDB database connection established successfully!');
+connection.once("open", () => {
+  console.log("MongoDB database connection established successfully!");
 });
 
 // SETUP ROUTES
-app.use('/items', ItemRoute);
+app.use("/items", ItemRoute);
 
 const port = process.env.PORT || SERVER_PORT;
 app.listen(port, () => console.log(`Server running on port ${port}`));
