@@ -88,34 +88,34 @@ const TelevisionForm = () => {
     },
   ];
 
-  const selectInputs = [
-    {
-      id: 1,
-      value: color,
-      label: 'Color: ',
-      placeholder: 'Choose a color',
-      options: ['Black', 'White'],
-    },
-    {
-      id: 2,
-      value: screenType,
-      label: 'Screen type: ',
-      placeholder: 'Choose a screen type',
-      options: ['LED', 'QLED'],
-    },
-    {
-      id: 3,
-      value: resolution,
-      placeholder: 'Choose a resolution',
-      options: ['1280 × 720', '1920 × 1080', '3840 × 2160', '	7680 × 4320'],
-    },
-    {
-      id: 4,
-      value: madeOf,
-      placeholder: 'Choose a material',
-      options: ['Plastic', 'metal'],
-    },
-  ];
+  // const selectInputs = [
+  //   {
+  //     id: 1,
+  //     value: color,
+  //     label: 'Color: ',
+  //     placeholder: 'Choose a color',
+  //     options: ['Black', 'White'],
+  //   },
+  //   {
+  //     id: 2,
+  //     value: screenType,
+  //     label: 'Screen type: ',
+  //     placeholder: 'Choose a screen type',
+  //     options: ['LED', 'QLED'],
+  //   },
+  //   {
+  //     id: 3,
+  //     value: resolution,
+  //     placeholder: 'Choose a resolution',
+  //     options: ['1280 × 720', '1920 × 1080', '3840 × 2160', '	7680 × 4320'],
+  //   },
+  //   {
+  //     id: 4,
+  //     value: madeOf,
+  //     placeholder: 'Choose a material',
+  //     options: ['Plastic', 'metal'],
+  //   },
+  // ];
 
   const radioInputs = [
     {
