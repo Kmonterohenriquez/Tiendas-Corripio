@@ -10,9 +10,12 @@ const port = process.env.PORT || SERVER_PORT;
 // In Production
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
-  app.get("*", (req, res) => {
-    req.sendFile(path.resolve(__dirname, "build", "index.html"));
-  });
+  // app.get("*", (req, res) => {
+  //   req.sendFile(path.resolve(__dirname, "build", "index.html"));
+  // });
+  app.use('/css', express.static(__dirname + 'public/css'));
+  app.use('/img', express.static(__dirname + 'public/img'));
+  app.use('/js', express.static(__dirname + 'public/js'));
 }
 // Import Routes for MongoDB
 const ItemRoute = require("./routes/ItemRoute");
