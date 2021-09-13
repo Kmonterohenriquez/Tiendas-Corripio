@@ -38,7 +38,11 @@ connection.once("open", () => {
   console.log("MongoDB database connection established successfully!");
 });
 
-// SETUP ROUTES
-app.use("/items", ItemRoute);
+app.get('/', function(req, res){
+  console.log("Render Working")
+  res.send();
+});
+
+// SETUP ROUTE
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
